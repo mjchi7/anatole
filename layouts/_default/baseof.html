@@ -8,9 +8,6 @@
   <body>
     <header>{{ partial "navbar.html" . }}</header>
     <div class="wrapper">
-      <aside>
-        {{- partial "sidebar.html" . -}}
-      </aside>
       <main>
         <div class="autopagerize_page_element">
           <div class="content">
@@ -18,6 +15,9 @@
           </div>
         </div>
       </main>
+      <aside>
+        {{- partial "sidebar.html" . -}}
+      </aside>
     </div>
 
     {{- partial "footer.html" (dict "context" . "footerClassModifier" "base") -}}
